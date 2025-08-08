@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AnchorsViewController: UIViewController {
 
     // MARK: - Properties
 
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
 // MARK: - Helpers
 
-extension ViewController {
+extension AnchorsViewController {
 
     private func setupViews() {
         view.backgroundColor = .systemBackground
@@ -95,8 +95,6 @@ extension ViewController {
 
         // customView: option 1 - size dynamically (pinning)
         NSLayoutConstraint.activate([
-            customView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            customView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             customView.topAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.topAnchor,
                 constant: 100
